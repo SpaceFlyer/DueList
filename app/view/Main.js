@@ -3,9 +3,12 @@ Ext.define('DueList.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.Toolbar',
+        'Ext.dataview.List',
+        'Ext.data.Store'
     ],
     config: {
         fullscreen: true,
+        layout: 'fit',
 
         items: [
             {
@@ -42,6 +45,14 @@ Ext.define('DueList.view.Main', {
             	        	ui: 'plain'
             	        }
             	]
+            },
+            {
+            	xtype: 'list',
+            	flex: 1,
+        		data: [
+        		       {name: 'Item 1', date: '09/01/2013', is_completed: false}
+        		],
+            	itemTpl: '{name}'
             }
         ]
     }
