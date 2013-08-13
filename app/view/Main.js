@@ -23,19 +23,23 @@ Ext.define('DueList.view.Main', {
             	        },
             	        {
             	        	xtype: 'button',
-            	        	iconCls: 'refresh'
+            	        	iconCls: 'refresh',
+            	        	ui: 'plain'
             	        },
             	        {
             	        	xtype: 'button',
-            	        	iconCls: 'add'
+            	        	iconCls: 'add',
+            	        	ui: 'plain'
             	        },
             	        {
             	        	xtype: 'button',
-            	        	iconCls: 'delete'
+            	        	iconCls: 'delete',
+            	        	ui: 'plain'
             	        },
             	        {
             	        	xtype: 'button',
-            	        	iconCls: 'more'
+            	        	iconCls: 'more',
+            	        	ui: 'plain'
             	        }
             	]
             }
