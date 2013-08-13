@@ -33,7 +33,7 @@ Ext.define('DueList.view.Main', {
             	        },
             	        {
             	        	xtype: 'button',
-            	        	iconCls: 'delete',
+            	        	iconCls: 'trash',
             	        	ui: 'plain'
             	        },
             	        {
