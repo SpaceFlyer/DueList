@@ -2,7 +2,7 @@ Ext.define('DueList.view.Main', {
     extend: 'Ext.Container',
     xtype: 'main',
     requires: [
-        'Ext.Toolbar',
+        'DueList.view.HeaderBar',
         'Ext.dataview.List',
         'Ext.data.Store'
     ],
@@ -13,38 +13,7 @@ Ext.define('DueList.view.Main', {
         items: [
             {
             	docked: 'top',
-            	xtype: 'toolbar',
-            	layout: {
-            		pack: 'end',
-            		type: 'hbox'
-            	},
-            	items: [
-            	        {
-            	        	xtype: 'title',
-            	        	title: 'Due List',
-            	        	docked: 'left'
-            	        },
-            	        {
-            	        	xtype: 'button',
-            	        	iconCls: 'refresh',
-            	        	ui: 'plain'
-            	        },
-            	        {
-            	        	xtype: 'button',
-            	        	iconCls: 'add',
-            	        	ui: 'plain'
-            	        },
-            	        {
-            	        	xtype: 'button',
-            	        	iconCls: 'trash',
-            	        	ui: 'plain'
-            	        },
-            	        {
-            	        	xtype: 'button',
-            	        	iconCls: 'more',
-            	        	ui: 'plain'
-            	        }
-            	]
+            	xtype: 'headerbar'
             },
             {
             	xtype: 'list',
