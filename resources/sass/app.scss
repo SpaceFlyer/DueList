@@ -5,6 +5,9 @@
 @import 'sencha-touch/default/all';
 
 // Custom code goes here..
+.sencha_template {
+	display: none;
+}
 
 // Examples of using the icon mixin:
 // @include icon('user');

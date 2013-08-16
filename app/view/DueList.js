@@ -7,7 +7,7 @@ Ext.define('DueList.view.DueList', {
 		data: [
 		       {name: 'Item 1', date: '09/01/2013', is_completed: false}
 		],
-
-		itemTpl: '{name}'
+		
+		itemTpl: document.getElementById('tpl_due_list_item').innerHTML
 	}
 });
