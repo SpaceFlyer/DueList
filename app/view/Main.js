@@ -3,6 +3,7 @@ Ext.define('DueList.view.Main', {
     xtype: 'main',
     requires: [
         'DueList.view.HeaderBar',
+        'DueList.view.DueList',
         'Ext.dataview.List',
         'Ext.data.Store'
     ],
@@ -16,12 +17,7 @@ Ext.define('DueList.view.Main', {
             	xtype: 'headerbar'
             },
             {
-            	xtype: 'list',
-            	flex: 1,
-        		data: [
-        		       {name: 'Item 1', date: '09/01/2013', is_completed: false}
-        		],
-            	itemTpl: '{name}'
+            	xtype: 'duelist'
             }
         ]
     }
